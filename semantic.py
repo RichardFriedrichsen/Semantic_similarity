@@ -11,7 +11,7 @@ print(word3.similarity(word1))
 # Q1: Write a note about what you found interesting about the similarities between cat, monkey and banana and think of an example of your own.
 
 ''' A1: 
-    On the similarity, you get a floating point number (percentage) of ho similar two words are. If we look 
+    On the similarity, you get a floating point number (percentage) of how similar two words are. If we look 
     at these percentages we see that cat and monkey are most similar with 59% because they are both animals. 
     Banana and monkey have a higher similarity then cat and banana, so the model seems to know that monkeys eat bananas.
 '''
@@ -55,28 +55,3 @@ for sentence in sentences:
     similarity = nlp(sentence).similarity(model_sentence)
     print(sentence + " - ", similarity)
 
-''' MD Language model
-0.5929930274321619
-0.40415016164997786
-0.22358825939615987
-cat cat 1.0
-cat apple 0.2036806046962738    
-cat monkey 0.5929930210113525   
-cat banana 0.2235882580280304   
-apple cat 0.2036806046962738    
-apple apple 1.0
-apple monkey 0.2342509925365448 
-apple banana 0.6646699905395508 
-monkey cat 0.5929930210113525   
-monkey apple 0.2342509925365448 
-monkey monkey 1.0
-monkey banana 0.4041501581668854
-banana cat 0.2235882580280304   
-banana apple 0.6646699905395508 
-banana monkey 0.4041501581668854
-banana banana 1.0
-where did my dog go -  0.630065230699739        
-Hello, there is my car -  0.8033180111627156    
-I've lost my car in my car -  0.6787541571030323
-I'd like my boat back -  0.5624940517078084   
-I will name my dog Diana -  0.6491444739190607'''

@@ -1,2 +1,5 @@
 # Ignore
 semantic_similarity.txt
+
+# Virtual env
+venv/
